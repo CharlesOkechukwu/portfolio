@@ -35,6 +35,7 @@ main header {
     overflow-y: auto;
     position: fixed;
     transition: transform 0.3s;
+    display: none;
 }
 /* header menu icon style */
 main .menu {
