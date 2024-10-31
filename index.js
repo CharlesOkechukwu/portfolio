@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const edit = document.getElementById('editable');
     const inputs = [
-        'a fullstack software engineer(backend heavy)',
+        'a fullstack software engineer',
         'a web and sofware developer', 
         'from Nigeria', 
         'passionate about web development', 
