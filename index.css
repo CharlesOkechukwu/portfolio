@@ -60,9 +60,6 @@ main .menu:hover {
     background-color: #0f7ebc;
 }
 /* Navigation style*/
-main header nav {
-    
-}
 main header nav ul li {
     list-style: none;
     display: block;
@@ -151,4 +148,29 @@ main .content .intro .intro-text h1 {
 main .content .intro .intro-text p {
     font-size: 20px;
     color: #ffffff;
+}
+
+#editable {
+    display: inline-block;
+    position: relative;
+}
+#editable::after {
+    content: '|';
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#blank {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #0f7ebc;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
 }
