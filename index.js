@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'from Nigeria', 
         'passionate about web development', 
         'efficient with python and nodejs', 
-        'skilled in HTML, CSS, jQuery, JavaScript, React', 
+        'skilled in HTML, CSS and javaScript', 
         'glad you are here!', 
         'excited to work with you!'
     ];
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     edit.textContent += text[charIndex++];
                     setTimeout(typeCharacter, 100);
                 } else {
-                    setTimeout(resolve, 1000); // Wait before deleting text
+                    setTimeout(resolve, 2000); // Wait before deleting text
                 }
             }
             typeCharacter();
@@ -63,4 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Start the animation
     loopTexts();
+
+    // add sliding animation to title and intro
+    var name = document.getElementById('intro-name');
+    var intro = document.getElementById('intro-text');
+
+    setTimeout(() => {
+        name.classList.add('slide-up');
+        intro.classList.add('slide-in-right');
+    });
 });
