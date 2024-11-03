@@ -2,8 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const menu = document.getElementById('menu');
     const nav = document.getElementById('nav-bar');
 
-    menu.addEventListener('click', function() {
+    menu.addEventListener('click', function() { /* hide and display menu */
         nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        menu.classList.contains('fa-bars') ? menu.classList.replace('fa-bars', 'fa-times') : menu.classList.replace('fa-times', 'fa-bars');
     });
 
     const edit = document.getElementById('editable');
