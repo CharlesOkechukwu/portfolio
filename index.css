@@ -230,7 +230,7 @@ main section .about h2::after {
     background-color: #149ddd;
 }
 /* style skills section */
-main section .skills h6 {
+main section .skills .sub {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -263,4 +263,84 @@ main section .skills .skill-container div {
 }
 main section .skills .skill-container div .progress {
     background-color: #149ddd;
+}
+
+/* Desktop styling */
+@media screen and (min-width: 768px) {
+    main header {
+        display: block;
+    }
+
+    main .menu {
+        display: none;
+    }
+
+    main .content {
+        margin-left: 300px;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .skill-container {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .skill-container span[for] {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .skill-container span[for] i.value {
+        font-style: normal;
+        color: #666;
+      }
+    
+      .skill-container .progress {
+        height: 8px;
+        border-radius: 4px;
+        background: linear-gradient(to right, #149ddd, #149ddd);
+      }
+
+      .skill-container .html .progress {
+        background: linear-gradient(to right, #149ddd, #149ddd);
+      }
+    
+      .skill-container .css .progress {
+        background: linear-gradient(to right, #149ddd, #149ddd);
+      }
+    
+      .skill-container .javascript .progress {
+        background: linear-gradient(to right, #149ddd, #149ddd);
+      }
+    
+      .skill-container .react .progress {
+        background: linear-gradient(to right, #149ddd, #149ddd);
+      }
+    
+      .sub {
+        grid-column: 1 / -1;
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #555;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 4px;
+      }
 }
